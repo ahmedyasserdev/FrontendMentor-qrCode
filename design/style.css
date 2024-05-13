@@ -74,3 +74,9 @@ body {
     border-radius: 30px;
   }
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
