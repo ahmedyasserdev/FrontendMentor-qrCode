@@ -1,82 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: hsl(212, 45%, 89%);
 }
 
-.container {
-  margin-top: 100px;
-  width: 23%;
-  height: 580px;
-  margin-left: auto;
-  margin-right: auto;
+.card {
+  width: 28rem;
+  height: 42rem;
   background-color: hsl(0, 0%, 100%);
-  border: none;
-  border-radius: 20px;
-  -webkit-box-shadow: -1px 0px 43px -17px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 0px 43px -17px rgba(0, 0, 0, 0.75);
-  box-shadow: -1px 0px 43px -17px rgba(0, 0, 0, 0.75);
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
+  text-align: center;
 }
-
-.image {
-  padding: 15px;
-  width: 92%;
-  height: auto;
-  margin-left: auto; /* Centering the image horizontally */
-  margin-right: auto;
-  border-radius: 30px;
+.card .content {
+  margin: 0 0.5rem;
+  padding: 0.5rem;
 }
-
-.para1 {
-  color: hsl(218, 44%, 22%);
-  width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Outfit", sans-serif;
+.card .content h2 {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.para2 {
-  width: 275px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Outfit", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  font-style: normal;
-  color: hsl(220, 15%, 55%);
+  text-wrap: balance;
+  color: hsl(218, 44%, 22%);
   line-height: 1.5;
-  text-align: center;
 }
-
-/* Responsive styles for mobile */
-@media (max-width: 375px) {
-  .container {
-    margin-top: 100px;
-    width: 320px;
-    height: 530px;
-  }
-
-  .image {
-    margin-top: 3px;
-    padding: 15px;
-    width: 90%;
-    height: auto;
-    margin-left: auto; /* Centering the image horizontally */
-    margin-right: auto;
-    border-radius: 30px;
-  }
+.card .content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
-
-footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+.card img {
+  width: 25rem;
+  height: 25rem;
+  margin: 1rem auto;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
 }
